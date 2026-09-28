@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nexus - Next-generation digital platform delivering innovative solutions, intelligent automation, and premium digital experiences.">
+  <title>NEXUS &bull; Next-Gen Digital Experience</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== 1. PRELOADER / LOADING PAGE ==================== -->
+  <div id="preloader" class="preloader" aria-label="Loading Screen">
+    <div class="preloader-backdrop"></div>
+    <div class="preloader-content">
+      <div class="preloader-logo-wrap">
+        <div class="preloader-ring"></div>
+        <div class="preloader-ring-pulse"></div>
+        <div class="preloader-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 4L34 12V28L20 36L6 28V12L20 4Z" stroke="url(#preloader-grad)" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="M20 12L28 17V23L20 28L12 23V17L20 12Z" fill="url(#preloader-grad)" fill-opacity="0.8"/>
+            <defs>
+              <linearGradient id="preloader-grad" x1="6" y1="4" x2="34" y2="36" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6366F1"/>
+                <stop offset="0.5" stop-color="#8B5CF6"/>
+                <stop offset="1" stop-color="#06B6D4"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <div class="preloader-brand">
+        <span class="brand-title">NEXUS</span>
+        <span class="brand-tagline">Initializing Future Systems</span>
+      </div>
+      
+      <!-- Progress Bar & Counter -->
+      <div class="preloader-track">
+        <div id="preloader-progress" class="preloader-bar"></div>
+      </div>
+      <div class="preloader-status">
+        <span id="preloader-step">Connecting neural core...</span>
+        <span id="preloader-number">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header id="header" class="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Nexus Home">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 2L24 7.7V19.3L14 25L4 19.3V7.7L14 2Z" stroke="currentColor" stroke-width="2"/>
+            <circle cx="14" cy="13.5" r="3.5" fill="currentColor"/>
+          </svg>
+        </div>
+        <span class="logo-text">NEXUS<span>.io</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-secondary-sm">Get in Touch</a>
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== 2. HERO SECTION ==================== -->
+    <section id="hero" class="hero-section">
+      <div class="hero-ambient hero-ambient-1"></div>
+      <div class="hero-ambient hero-ambient-2"></div>
+      <div class="hero-grid-pattern"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge animate-on-load">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Next-Generation Intelligent Architecture</span>
+            <span class="badge-pill">v2.4</span>
+          </div>
+
+          <h1 class="hero-title animate-on-load">
+            Architecting The Next Dimension of <span class="gradient-text">Digital Innovation</span>
+          </h1>
+
+          <p class="hero-description animate-on-load">
+            Empower your team with lightning-fast cloud orchestration, automated AI intelligence, and ultra-sleek design systems engineered for peak performance.
+          </p>
+
+          <div class="hero-cta-group animate-on-load">
+            <a href="#features" class="btn btn-primary">
+              <span>Explore Features</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#about" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+              <span>Watch Overview</span>
+            </a>
+          </div>
+
+          <!-- Trust metrics bar -->
+          <div class="hero-trust-bar animate-on-load">
+            <div class="trust-stat">
+              <span class="stat-number">99.99%</span>
+              <span class="stat-label">Uptime SLA</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-stat">
+              <span class="stat-number">120ms</span>
+              <span class="stat-label">Global Latency</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-stat">
+              <span class="stat-number">45K+</span>
+              <span class="stat-label">Active Deployments</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual animate-on-load">
+          <div class="dashboard-mockup">
+            <div class="mockup-header">
+              <div class="mockup-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="mockup-title-bar">
+                <span class="mockup-domain">nexus.system.internal // active-stream</span>
+              </div>
+              <div class="mockup-badge">LIVE</div>
+            </div>
+
+            <div class="mockup-body">
+              <div class="mockup-top-metrics">
+                <div class="metric-card">
+                  <span class="metric-title">Throughput</span>
+                  <span class="metric-value">2.44 GB/s</span>
+                  <div class="metric-graph-mock">
+                    <span class="bar-spark h-40"></span>
+                    <span class="bar-spark h-60"></span>
+                    <span class="bar-spark h-85"></span>
+                    <span class="bar-spark h-50"></span>
+                    <span class="bar-spark h-95"></span>
+                    <span class="bar-spark h-75"></span>
+                    <span class="bar-spark h-100"></span>
+                  </div>
+                </div>
+                <div class="metric-card">
+                  <span class="metric-title">AI Processing</span>
+                  <span class="metric-value">0.08 ms</span>
+                  <span class="metric-trend positive">+34% vs standard</span>
+                </div>
+              </div>
+
+              <div class="mockup-terminal">
+                <div class="terminal-line"><span class="t-green">➜</span> <span class="t-purple">system</span> initializing cloud clusters... [OK]</div>
+                <div class="terminal-line"><span class="t-green">➜</span> <span class="t-purple">quantum-mesh</span> active on 14 global zones</div>
+                <div class="terminal-line highlight"><span class="t-cyan">★</span> Neural models compiled in 142ms. Zero latency detected.</div>
+              </div>
+
+              <!-- Floating holographic badge cards -->
+              <div class="floating-badge badge-top-right">
+                <div class="badge-icon-wrap">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <span class="badge-small-title">Real-Time Sync</span>
+                  <span class="badge-small-sub">Synchronized 100%</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-left">
+                <div class="badge-icon-wrap shield">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div>
+                  <span class="badge-small-title">End-to-End Encrypted</span>
+                  <span class="badge-small-sub">AES-256 GCM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. ABOUT SECTION ==================== -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-badge-center">
+          <span class="section-tag">WHO WE ARE</span>
+          <h2 class="section-heading">Redefining What's Possible In The Cloud</h2>
+          <p class="section-subtext">
+            Nexus was founded to break the barriers of traditional computing. We combine algorithmic elegance, responsive design, and distributed intelligence to build systems that scale effortlessly.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-story-card">
+            <div class="card-glow-effect"></div>
+            <div class="about-header-pill">Our Mission</div>
+            <h3 class="about-card-title">Crafted with precision, built for limitless growth</h3>
+            <p class="about-card-text">
+              We empower modern product builders, architects, and visionaries. By merging high-throughput engineering with intuitive, responsive interfaces, we turn complex distributed challenges into instant workflows.
+            </p>
+
+            <div class="about-features-list">
+              <div class="about-feature-item">
+                <div class="check-icon">✓</div>
+                <div>
+                  <strong>Ultra-low latency architecture:</strong> Native microsecond event streaming across distributed nodes.
+                </div>
+              </div>
+              <div class="about-feature-item">
+                <div class="check-icon">✓</div>
+                <div>
+                  <strong>Autonomous self-healing:</strong> Continuous cluster self-inspection with instant failover recovery.
+                </div>
+              </div>
+              <div class="about-feature-item">
+                <div class="check-icon">✓</div>
+                <div>
+                  <strong>Human-centric interface:</strong> Beautiful, accessible dashboards built for effortless navigation.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-metrics-grid">
+            <div class="stat-box">
+              <div class="stat-box-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <span class="stat-huge" data-counter="10">10x</span>
+              <span class="stat-name">Faster Pipeline Deployment</span>
+              <p class="stat-desc">Accelerate build cycles from hours to sub-minute intervals.</p>
+            </div>
+
+            <div class="stat-box">
+              <div class="stat-box-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+              </div>
+              <span class="stat-huge" data-counter="180">180+</span>
+              <span class="stat-name">Global Edge Locations</span>
+              <p class="stat-desc">Zero-hop delivery to users on every continent.</p>
+            </div>
+
+            <div class="stat-box">
+              <div class="stat-box-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <span class="stat-huge" data-counter="98">98.8%</span>
+              <span class="stat-name">Customer Satisfaction</span>
+              <p class="stat-desc">Voted #1 Developer Experience by enterprise leaders.</p>
+            </div>
+
+            <div class="stat-box">
+              <div class="stat-box-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </div>
+              <span class="stat-huge" data-counter="100">Zero</span>
+              <span class="stat-name">Security Breaches</span>
+              <p class="stat-desc">SOC2 Type II, ISO 27001, and HIPAA compliant security posture.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. FEATURES SECTION ==================== -->
+    <section id="features" class="features-section">
+      <div class="container">
+        <div class="section-badge-center">
+          <span class="section-tag">CORE CAPABILITIES</span>
+          <h2 class="section-heading">Engineered For Unrivaled Capability</h2>
+          <p class="section-subtext">
+            Everything you need to conceptualize, launch, and scale hyper-responsive applications without friction.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature Card 1 -->
+          <div class="feature-card highlight-card">
+            <div class="card-ambient-spot"></div>
+            <div class="feature-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Quantum Velocity Engine</h3>
+            <p class="feature-text">
+              Proprietary execution layer designed with sub-millisecond dispatching, optimized byte-caching, and auto-tuning hardware threads.
+            </p>
+            <div class="feature-meta">
+              <span class="pill-tag">Ultra Fast</span>
+              <span class="pill-tag">Auto-Scaled</span>
+            </div>
+          </div>
+
+          <!-- Feature Card 2 -->
+          <div class="feature-card">
+            <div class="card-ambient-spot"></div>
+            <div class="feature-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Adaptive AI Automation</h3>
+            <p class="feature-text">
+              Self-learning models continuously analyze workload patterns to predict spikes and dynamically provision compute nodes before slowdowns.
+            </p>
+            <div class="feature-meta">
+              <span class="pill-tag">Machine Learning</span>
+              <span class="pill-tag">Zero Downtime</span>
+            </div>
+          </div>
+
+          <!-- Feature Card 3 -->
+          <div class="feature-card">
+            <div class="card-ambient-spot"></div>
+            <div class="feature-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Zero-Trust Shielding</h3>
+            <p class="feature-text">
+              Cryptographic micro-segmentation, biometric access controls, and automated compliance auditing out of the box with zero setup.
+            </p>
+            <div class="feature-meta">
+              <span class="pill-tag">SOC2 Ready</span>
+              <span class="pill-tag">Military Grade</span>
+            </div>
+          </div>
+
+          <!-- Feature Card 4 -->
+          <div class="feature-card">
+            <div class="card-ambient-spot"></div>
+            <div class="feature-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Telemetry & Deep Analytics</h3>
+            <p class="feature-text">
+              High-resolution live metrics, heatmaps, trace waterfalls, and anomaly alerts sent directly to your existing Slack and webhook channels.
+            </p>
+            <div class="feature-meta">
+              <span class="pill-tag">Real-Time</span>
+              <span class="pill-tag">OpenTelemetry</span>
+            </div>
+          </div>
+
+          <!-- Feature Card 5 -->
+          <div class="feature-card">
+            <div class="card-ambient-spot"></div>
+            <div class="feature-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Universal API Fabric</h3>
+            <p class="feature-text">
+              Plug and play with GraphQL, gRPC, REST, and WebSockets. One unified schema layer that bridges all legacy and modern stacks.
+            </p>
+            <div class="feature-meta">
+              <span class="pill-tag">GraphQL & REST</span>
+              <span class="pill-tag">SDKs Ready</span>
+            </div>
+          </div>
+
+          <!-- Feature Card 6 -->
+          <div class="feature-card">
+            <div class="card-ambient-spot"></div>
+            <div class="feature-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                <line x1="12" y1="22.08" x2="12" y2="12"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Edge Mesh Synchronization</h3>
+            <p class="feature-text">
+              Data state replicates smoothly across the globe using conflict-free replicated data types (CRDTs) with zero merge contention.
+            </p>
+            <div class="feature-meta">
+              <span class="pill-tag">Global Mesh</span>
+              <span class="pill-tag">Instant Sync</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. CONTACT SECTION (CONECT) ==================== -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-badge-center">
+          <span class="section-tag">GET IN TOUCH</span>
+          <h2 class="section-heading">Connect With Our Team</h2>
+          <p class="section-subtext">
+            Have questions or ready to launch your next breakthrough? Drop us a message and our specialists will respond within minutes.
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Contact Info Column -->
+          <div class="contact-info-panel">
+            <h3 class="info-panel-title">Let's build something extraordinary together</h3>
+            <p class="info-panel-text">
+              Whether you need architecture guidance, custom enterprise scaling, or want a demo of Nexus, we're here around the clock.
+            </p>
+
+            <div class="info-items">
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <span class="info-label">Direct Email</span>
+                  <a href="mailto:hello@nexus.io" class="info-val">hello@nexus.io</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <span class="info-label">Phone Support</span>
+                  <a href="tel:+18005550199" class="info-val">+1 (800) 555-0199</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-7-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <span class="info-label">Headquarters</span>
+                  <span class="info-val">Silicon Valley, CA &bull; Global Distributed</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <span class="socials-label">Follow us:</span>
+              <div class="social-links">
+                <a href="#hero" class="social-btn" aria-label="Twitter">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                </a>
+                <a href="#hero" class="social-btn" aria-label="GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+                <a href="#hero" class="social-btn" aria-label="LinkedIn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Panel -->
+          <div class="contact-form-panel">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name *</label>
+                  <input type="text" id="name" name="name" placeholder="John Doe" required>
+                  <span class="input-error-msg" id="name-error">Please enter your name</span>
+                </div>
+                <div class="form-group">
+                  <label for="email">Work Email *</label>
+                  <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                  <span class="input-error-msg" id="email-error">Please enter a valid email</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Inquiry Subject *</label>
+                <select id="subject" name="subject" required>
+                  <option value="" disabled selected>Select an option...</option>
+                  <option value="enterprise">Enterprise Cloud Architecture</option>
+                  <option value="demo">Request Product Demo</option>
+                  <option value="partnership">Strategic Partnership</option>
+                  <option value="support">Technical Support</option>
+                </select>
+                <span class="input-error-msg" id="subject-error">Please select a subject</span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us about your project requirements or goals..." required></textarea>
+                <span class="input-error-msg" id="message-error">Message must be at least 10 characters</span>
+              </div>
+
+              <button type="submit" id="submit-btn" class="btn btn-primary btn-submit">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-spinner" aria-hidden="true"></span>
+                <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              </button>
+
+              <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2L24 7.7V19.3L14 25L4 19.3V7.7L14 2Z" stroke="currentColor" stroke-width="2"/>
+                <circle cx="14" cy="13.5" r="3.5" fill="currentColor"/>
+              </svg>
+            </div>
+            <span class="logo-text">NEXUS<span>.io</span></span>
+          </a>
+          <p class="footer-tagline">Architecting intelligent cloud systems for the modern digital era.</p>
+        </div>
+
+        <div class="footer-nav">
+          <div class="footer-col">
+            <h4 class="footer-col-title">Navigation</h4>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Product</h4>
+            <ul>
+              <li><a href="#features">Velocity Core</a></li>
+              <li><a href="#features">Zero-Trust Shield</a></li>
+              <li><a href="#features">Neural Models</a></li>
+              <li><a href="#features">Edge Mesh</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Testing Tools</h4>
+            <ul>
+              <li><button id="btn-replay-loader" class="text-link-btn">Replay Loading Screen</button></li>
+              <li><a href="#contact">Schedule Demo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 NEXUS Technologies Inc. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="#">Terms of Service</a>
+          <span>&bull;</span>
+          <a href="#">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="assertive"></div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
